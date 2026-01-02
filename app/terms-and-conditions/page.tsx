@@ -1,4 +1,5 @@
-import Link from "next/link";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,94 +9,68 @@ export const metadata: Metadata = {
 
 export default function TermsAndConditions() {
     return (
-        <div className="min-h-screen bg-white">
-            {/* Header */}
-            <header className="fixed top-0 left-0 right-0 z-50 glass">
-                <div className="max-w-7xl mx-auto px-6 py-4">
-                    <div className="flex items-center justify-between">
-                        <Link href="/" className="flex items-center gap-2">
-                            <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.8214 2.48697 15.5291 3.33782 17L2.5 21.5L7 20.6622C8.47087 21.513 10.1786 22 12 22Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M8 10.5H16M8 14H13" stroke="white" strokeWidth="2" strokeLinecap="round" />
-                                </svg>
-                            </div>
-                            <span className="text-xl font-bold text-gray-900">ChatFlow</span>
-                        </Link>
-                        <Link href="/" className="btn-secondary text-sm py-2 px-4">
-                            ← Back to Home
-                        </Link>
-                    </div>
+        <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black">
+            <Header />
+            
+            <section className="pt-32 pb-20 relative overflow-hidden">
+                <div className="absolute inset-0">
+                    <div className="absolute top-20 left-10 w-96 h-96 bg-orange-600/10 rounded-full blur-3xl animate-pulse" />
+                    <div className="absolute bottom-20 right-10 w-80 h-80 bg-orange-500/5 rounded-full blur-3xl animate-pulse" />
                 </div>
-            </header>
-
-            {/* Content */}
-            <main className="pt-32 pb-20">
-                <div className="max-w-3xl mx-auto px-6">
-                    <div className="mb-12">
-                        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Terms and Conditions</h1>
-                        <p className="text-gray-500">Last updated: December 30, 2024</p>
+                
+                <div className="relative max-w-4xl mx-auto px-6">
+                    <div className="text-center mb-12">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full text-sm font-medium text-orange-400 mb-6">
+                            Legal
+                        </div>
+                        <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">Terms and Conditions</h1>
+                        <p className="text-gray-400">Last updated: December 30, 2024</p>
                     </div>
 
-                    <div className="prose prose-lg max-w-none">
-                        <section className="mb-10">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Agreement to Terms</h2>
-                            <p className="text-gray-600 leading-relaxed mb-4">
-                                By accessing or using ChatFlow (&quot;the Service&quot;), you agree to be bound by these Terms and Conditions
-                                (&quot;Terms&quot;). If you disagree with any part of these terms, you do not have permission to access the Service.
-                            </p>
-                            <p className="text-gray-600 leading-relaxed">
-                                These Terms apply to all visitors, users, and others who access or use the Service, including
-                                merchants who install ChatFlow on their Shopify stores.
-                            </p>
-                        </section>
+                    <div className="bg-black/40 backdrop-blur-md rounded-2xl border border-orange-500/20 p-8 md:p-12">
+                        <div className="space-y-10">
+                            <section>
+                                <h2 className="text-2xl font-bold text-white mb-4">1. Agreement to Terms</h2>
+                                <p className="text-gray-300 leading-relaxed mb-4">
+                                    By accessing or using ChatFlow (&quot;the Service&quot;), you agree to be bound by these Terms and Conditions
+                                    (&quot;Terms&quot;). If you disagree with any part of these terms, you do not have permission to access the Service.
+                                </p>
+                                <p className="text-gray-300 leading-relaxed">
+                                    These Terms apply to all visitors, users, and others who access or use the Service, including
+                                    merchants who install ChatFlow on their Shopify stores.
+                                </p>
+                            </section>
 
-                        <section className="mb-10">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Description of Service</h2>
-                            <p className="text-gray-600 leading-relaxed mb-4">
-                                ChatFlow is a Shopify application that integrates Chatwoot live chat functionality into your
-                                Shopify store. The Service automatically:
-                            </p>
-                            <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                                <li>Creates a Chatwoot account on your behalf</li>
-                                <li>Sets up user credentials and inbox configuration</li>
-                                <li>Provides a chat widget for your Shopify storefront</li>
-                                <li>Enables real-time customer communication</li>
-                            </ul>
-                        </section>
+                            <section>
+                                <h2 className="text-2xl font-bold text-white mb-4">2. Description of Service</h2>
+                                <p className="text-gray-300 leading-relaxed mb-4">
+                                    ChatFlow is a Shopify application that integrates Chatwoot live chat functionality into your
+                                    Shopify store. The Service automatically:
+                                </p>
+                                <ul className="list-disc pl-6 text-gray-300 space-y-2">
+                                    <li>Creates a Chatwoot account on your behalf</li>
+                                    <li>Sets up user credentials and inbox configuration</li>
+                                    <li>Provides a chat widget for your Shopify storefront</li>
+                                    <li>Enables real-time customer communication</li>
+                                </ul>
+                            </section>
 
-                        <section className="mb-10">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Contact Us</h2>
-                            <p className="text-gray-600 leading-relaxed mb-4">
-                                If you have any questions about these Terms, please contact us:
-                            </p>
-                            <div className="bg-gray-50 rounded-xl p-6">
-                                <p className="text-gray-700 mb-2"><strong>Email:</strong> support@chatflow.app</p>
-                                <p className="text-gray-700"><strong>Website:</strong> https://chatflow.app</p>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </main>
-
-            {/* Footer */}
-            <footer className="bg-gray-900 text-white">
-                <div className="max-w-7xl mx-auto px-6 py-8">
-                    <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                        <p className="text-gray-400 text-sm">
-                            © {new Date().getFullYear()} ChatFlow. All rights reserved.
-                        </p>
-                        <div className="flex items-center gap-6 text-sm">
-                            <Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
-                                Privacy Policy
-                            </Link>
-                            <Link href="/" className="text-gray-400 hover:text-white transition-colors">
-                                Back to Home
-                            </Link>
+                            <section>
+                                <h2 className="text-2xl font-bold text-white mb-4">3. Contact Us</h2>
+                                <p className="text-gray-300 leading-relaxed mb-4">
+                                    If you have any questions about these Terms, please contact us:
+                                </p>
+                                <div className="bg-orange-500/10 border border-orange-500/20 rounded-xl p-6">
+                                    <p className="text-white mb-2"><strong>Email:</strong> support@chatflow.app</p>
+                                    <p className="text-white"><strong>Website:</strong> https://chatflow.app</p>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </div>
-            </footer>
+            </section>
+
+            <Footer />
         </div>
     );
 }
