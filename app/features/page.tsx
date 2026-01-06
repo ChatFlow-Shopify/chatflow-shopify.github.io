@@ -111,17 +111,17 @@ export default function FeaturesPage() {
             
             <section className="pt-32 pb-20 relative overflow-hidden">
                 <div className="absolute inset-0">
-                    <div className="absolute top-20 left-10 w-96 h-96 bg-orange-600/10 rounded-full blur-3xl animate-pulse" />
-                    <div className="absolute bottom-20 right-10 w-80 h-80 bg-orange-500/5 rounded-full blur-3xl animate-pulse" />
+                    <div className="absolute top-20 left-10 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl animate-pulse" />
+                    <div className="absolute bottom-20 right-10 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl animate-pulse" />
                 </div>
                 
                 <div className="relative max-w-4xl mx-auto px-6 text-center mb-20">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full text-sm font-medium text-orange-400 mb-6">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full text-sm font-medium text-blue-400 mb-6">
                         All Features
                     </div>
                     <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
                         Powerful Features for
-                        <span className="block bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+                        <span className="block bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                             Modern Commerce
                         </span>
                     </h1>
@@ -136,20 +136,20 @@ export default function FeaturesPage() {
                             <div key={index} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                                 <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                                     <div className="flex items-center gap-4 mb-6">
-                                        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white shadow-lg shadow-orange-500/25">
+                                        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-500/25">
                                             {feature.icon}
                                         </div>
                                         <div>
                                             <h2 className="text-3xl font-bold text-white mb-2">{feature.title}</h2>
-                                            <p className="text-orange-400 font-medium">{feature.description}</p>
+                                            <p className="text-[#1073E9] font-medium">{feature.description}</p>
                                         </div>
                                     </div>
                                     
                                     <ul className="space-y-4">
                                         {feature.details.map((detail, idx) => (
                                             <li key={idx} className="flex items-start gap-3 group">
-                                                <div className="w-6 h-6 rounded-full bg-orange-500/20 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-orange-500/30 transition-colors">
-                                                    <svg className="w-3 h-3 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <div className="w-6 h-6 rounded-full bg-[#1073E9]/20 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-[#1073E9]/30 transition-colors">
+                                                    <svg className="w-3 h-3 text-[#1073E9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                                                     </svg>
                                                 </div>
@@ -160,12 +160,12 @@ export default function FeaturesPage() {
                                 </div>
                                 
                                 <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
-                                    <div className="relative bg-black/40 backdrop-blur-md rounded-3xl border border-orange-500/20 p-8 hover:border-orange-500/40 transition-all duration-500 group overflow-hidden">
-                                        <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-orange-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                    <div className="relative bg-black/40 backdrop-blur-md rounded-3xl border border-[#1073E9]/20 p-8 hover:border-[#1073E9]/40 transition-all duration-500 group overflow-hidden">
+                                        <div className="absolute inset-0 bg-gradient-to-br from-[#1073E9]/5 via-transparent to-[#1073E9]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                         
                                         <div className="relative text-center">
-                                            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-orange-500/20 to-orange-600/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500">
-                                                <div className="text-6xl font-black text-orange-500">
+                                            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-[#1073E9]/20 to-[#1073E9]/20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500">
+                                                <div className="text-6xl font-black text-[#1073E9]">
                                                     {String(index + 1).padStart(2, '0')}
                                                 </div>
                                             </div>
@@ -174,7 +174,7 @@ export default function FeaturesPage() {
                                             <p className="text-gray-300">{feature.description}</p>
                                         </div>
                                         
-                                        <div className="absolute top-4 right-4 w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
+                                        <div className="absolute top-4 right-4 w-3 h-3 bg-[#1073E9] rounded-full animate-pulse"></div>
                                     </div>
                                 </div>
                             </div>

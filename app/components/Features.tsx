@@ -63,20 +63,20 @@ export default function Features() {
         <section id="features" className="py-20 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0">
-                <div className="absolute top-40 left-10 w-96 h-96 bg-orange-600/5 rounded-full blur-3xl animate-pulse" />
-                <div className="absolute bottom-40 right-10 w-80 h-80 bg-orange-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
-                <div className="absolute top-20 right-1/3 w-64 h-64 bg-orange-400/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '4s' }} />
+                <div className="absolute top-40 left-10 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl animate-pulse" />
+                <div className="absolute bottom-40 right-10 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+                <div className="absolute top-20 right-1/3 w-64 h-64 bg-blue-400/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '4s' }} />
             </div>
             
             <div className="relative max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full text-sm font-medium text-orange-400 mb-6">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full text-sm font-medium text-blue-400 mb-6">
                         Features
                     </div>
                     <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
                         Everything You Need for
-                        <span className="block bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+                        <span className="block bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                             Customer Support
                         </span>
                     </h2>
@@ -90,14 +90,14 @@ export default function Features() {
                     {features.map((feature, index) => (
                         <div 
                             key={index}
-                            className="group relative p-8 rounded-2xl border border-orange-500/20 bg-black/40 backdrop-blur-md hover:bg-orange-500/10 hover:border-orange-500/40 hover:shadow-2xl hover:shadow-orange-500/20 hover:scale-105 hover:-translate-y-2 transition-all duration-700 ease-out overflow-hidden"
+                            className="group relative p-8 rounded-2xl border border-blue-500/20 bg-black/40 backdrop-blur-md hover:bg-blue-500/10 hover:border-blue-500/40 hover:shadow-2xl hover:shadow-blue-500/20 hover:scale-105 hover:-translate-y-2 transition-all duration-700 ease-out overflow-hidden"
                         >
                             {/* Animated Background Glow */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/0 via-orange-500/5 to-orange-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                            <div className="absolute -inset-1 bg-gradient-to-r from-orange-500/20 via-transparent to-orange-600/20 rounded-2xl opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-700" />
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-blue-500/5 to-blue-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                            <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 via-transparent to-blue-600/20 rounded-2xl opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-700" />
                             
                             {/* Icon Container */}
-                            <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white mb-6 group-hover:scale-125 group-hover:rotate-6 group-hover:shadow-lg group-hover:shadow-orange-500/50 transition-all duration-700">
+                            <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white mb-6 group-hover:scale-125 group-hover:rotate-6 group-hover:shadow-lg group-hover:shadow-blue-500/50 transition-all duration-700">
                                 <div className="group-hover:scale-110 transition-transform duration-700">
                                     {feature.icon}
                                 </div>
@@ -105,7 +105,7 @@ export default function Features() {
                             
                             {/* Content */}
                             <div className="relative">
-                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-orange-100 transition-colors duration-500">
+                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-100 transition-colors duration-500">
                                     {feature.title}
                                 </h3>
                                 <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-500">
@@ -114,8 +114,8 @@ export default function Features() {
                             </div>
                             
                             {/* Floating Particles */}
-                            <div className="absolute top-4 right-4 w-2 h-2 bg-orange-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-opacity duration-500" />
-                            <div className="absolute bottom-6 left-6 w-1 h-1 bg-orange-500 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-700" style={{ animationDelay: '0.5s' }} />
+                            <div className="absolute top-4 right-4 w-2 h-2 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-opacity duration-500" />
+                            <div className="absolute bottom-6 left-6 w-1 h-1 bg-blue-500 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-700" style={{ animationDelay: '0.5s' }} />
                         </div>
                     ))}
                 </div>

@@ -127,17 +127,17 @@ export default function Setup() {
             
             <section className="pt-32 pb-20 relative overflow-hidden">
                 <div className="absolute inset-0">
-                    <div className="absolute top-20 left-10 w-96 h-96 bg-orange-600/10 rounded-full blur-3xl animate-pulse" />
-                    <div className="absolute bottom-20 right-10 w-80 h-80 bg-orange-500/5 rounded-full blur-3xl animate-pulse" />
+                    <div className="absolute top-20 left-10 w-96 h-96 bg-[#1073E9]/10 rounded-full blur-3xl animate-pulse" />
+                    <div className="absolute bottom-20 right-10 w-80 h-80 bg-[#1073E9]/5 rounded-full blur-3xl animate-pulse" />
                 </div>
                 
                 <div className="relative max-w-4xl mx-auto px-6 text-center mb-12">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full text-sm font-medium text-orange-400 mb-6">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#1073E9]/10 border border-[#1073E9]/30 rounded-full text-sm font-medium text-[#1073E9] mb-6">
                         Setup Guide
                     </div>
                     <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
                         Setup ChatFlow in
-                        <span className="block bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+                        <span className="block bg-gradient-to-r from-[#1073E9] to-[#1073E9] bg-clip-text text-transparent">
                             6 Simple Steps
                         </span>
                     </h1>
@@ -155,12 +155,12 @@ export default function Setup() {
                                 onClick={() => setActiveTab(index)}
                                 className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center gap-3 ${
                                     activeTab === index
-                                        ? 'bg-gradient-to-r from-orange-600 to-orange-700 text-white shadow-lg shadow-orange-500/25'
-                                        : 'bg-black/40 border border-orange-500/20 text-gray-300 hover:bg-orange-500/10 hover:border-orange-500/40'
+                                        ? 'bg-gradient-to-r from-[#1073E9] to-[#1073E9] text-white shadow-lg shadow-[#1073E9]/25'
+                                        : 'bg-black/40 border border-[#1073E9]/20 text-gray-300 hover:bg-[#1073E9]/10 hover:border-[#1073E9]/40'
                                 }`}
                             >
                                 <span className={`w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold ${
-                                    activeTab === index ? 'bg-white/20' : 'bg-orange-500/20'
+                                    activeTab === index ? 'bg-white/20' : 'bg-[#1073E9]/20'
                                 }`}>
                                     {index + 1}
                                 </span>
@@ -170,17 +170,17 @@ export default function Setup() {
                     </div>
 
                     {/* Tab Content */}
-                    <div className="bg-black/40 backdrop-blur-md rounded-3xl border border-orange-500/20 p-8 md:p-12">
+                    <div className="bg-black/40 backdrop-blur-md rounded-3xl border border-[#1073E9]/20 p-8 md:p-12">
                         <div className="grid lg:grid-cols-3 gap-8">
                             {/* Step Info */}
                             <div className="lg:col-span-1">
                                 <div className="flex items-center gap-4 mb-6">
-                                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-orange-500/25">
+                                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#1073E9] to-[#1073E9] flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-[#1073E9]/25">
                                         {activeTab + 1}
                                     </div>
                                     <div>
                                         <h2 className="text-2xl font-bold text-white">{steps[activeTab].title}</h2>
-                                        <p className="text-orange-400">{steps[activeTab].description}</p>
+                                        <p className="text-[#1073E9]">{steps[activeTab].description}</p>
                                     </div>
                                 </div>
                                 
@@ -189,8 +189,8 @@ export default function Setup() {
                                 </p>
 
                                 {/* Tips */}
-                                <div className="bg-orange-500/10 border border-orange-500/20 rounded-xl p-4">
-                                    <h4 className="text-orange-400 font-semibold mb-3 flex items-center gap-2">
+                                <div className="bg-[#1073E9]/10 border border-[#1073E9]/20 rounded-xl p-4">
+                                    <h4 className="text-[#1073E9] font-semibold mb-3 flex items-center gap-2">
                                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                         </svg>
@@ -199,7 +199,7 @@ export default function Setup() {
                                     <ul className="space-y-2">
                                         {steps[activeTab].content.tips.map((tip, idx) => (
                                             <li key={idx} className="text-gray-300 text-sm flex items-start gap-2">
-                                                <span className="text-orange-500 mt-1">•</span>
+                                                <span className="text-[#1073E9] mt-1">•</span>
                                                 {tip}
                                             </li>
                                         ))}
@@ -212,9 +212,9 @@ export default function Setup() {
                                 <h3 className="text-xl font-bold text-white mb-6">Detailed Steps</h3>
                                 <div className="space-y-4">
                                     {steps[activeTab].content.steps.map((step, idx) => (
-                                        <div key={idx} className="flex gap-4 p-4 bg-black/60 rounded-xl border border-orange-500/10 hover:border-orange-500/20 transition-colors group">
-                                            <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/30 transition-colors">
-                                                <span className="text-orange-500 font-semibold text-sm">{idx + 1}</span>
+                                        <div key={idx} className="flex gap-4 p-4 bg-black/60 rounded-xl border border-[#1073E9]/10 hover:border-[#1073E9]/20 transition-colors group">
+                                            <div className="w-8 h-8 rounded-full bg-[#1073E9]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-[#1073E9]/30 transition-colors">
+                                                <span className="text-[#1073E9] font-semibold text-sm">{idx + 1}</span>
                                             </div>
                                             <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors">{step}</p>
                                         </div>
@@ -226,7 +226,7 @@ export default function Setup() {
                                     <button
                                         onClick={() => setActiveTab(Math.max(0, activeTab - 1))}
                                         disabled={activeTab === 0}
-                                        className="px-6 py-3 bg-black/60 border border-orange-500/30 text-white rounded-xl font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:bg-orange-500/10 transition-colors flex items-center gap-2"
+                                        className="px-6 py-3 bg-black/60 border border-[#1073E9]/30 text-white rounded-xl font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#1073E9]/10 transition-colors flex items-center gap-2"
                                     >
                                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -237,7 +237,7 @@ export default function Setup() {
                                     <button
                                         onClick={() => setActiveTab(Math.min(steps.length - 1, activeTab + 1))}
                                         disabled={activeTab === steps.length - 1}
-                                        className="px-6 py-3 bg-gradient-to-r from-orange-600 to-orange-700 text-white rounded-xl font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:from-orange-700 hover:to-orange-800 transition-colors flex items-center gap-2"
+                                        className="px-6 py-3 bg-gradient-to-r from-[#1073E9] to-[#1073E9] text-white rounded-xl font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:from-[#1073E9] hover:to-[#1073E9] transition-colors flex items-center gap-2"
                                     >
                                         Next
                                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

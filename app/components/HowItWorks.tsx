@@ -48,19 +48,19 @@ export default function HowItWorks() {
         <section id="how-it-works" className="py-20 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0">
-                <div className="absolute top-20 right-10 w-96 h-96 bg-orange-600/10 rounded-full blur-3xl" />
-                <div className="absolute bottom-20 left-10 w-80 h-80 bg-orange-500/5 rounded-full blur-3xl" />
+                <div className="absolute top-20 right-10 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />
+                <div className="absolute bottom-20 left-10 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl" />
             </div>
             
             <div className="relative max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full text-sm font-medium text-orange-400 mb-6">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full text-sm font-medium text-blue-400 mb-6">
                         How It Works
                     </div>
                     <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
                         Get Started in
-                        <span className="block bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+                        <span className="block bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
                             4 Simple Steps
                         </span>
                     </h2>
@@ -75,25 +75,25 @@ export default function HowItWorks() {
                         <div key={index} className="relative">
                             {/* Connector Line */}
                             {index < steps.length - 1 && (
-                                <div className="hidden lg:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-orange-500/30 to-orange-600/30 -translate-x-1/2 z-0"></div>
+                                <div className="hidden lg:block absolute top-16 left-full w-full h-0.5 bg-gradient-to-r from-blue-500/30 to-blue-600/30 -translate-x-1/2 z-0"></div>
                             )}
                             
-                            <div className="relative bg-black/40 backdrop-blur-md rounded-2xl p-8 border border-orange-500/20 hover:bg-orange-500/10 hover:border-orange-500/40 hover:shadow-2xl hover:shadow-orange-500/20 hover:scale-105 transition-all duration-500 ease-out h-full group">
+                            <div className="relative bg-black/40 backdrop-blur-md rounded-2xl p-8 border border-blue-500/20 hover:bg-blue-500/10 hover:border-blue-500/40 hover:shadow-2xl hover:shadow-blue-500/20 hover:scale-105 transition-all duration-500 ease-out h-full group">
                                 {/* Glow Effect */}
-                                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-500/0 via-orange-500/5 to-orange-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500/0 via-blue-500/5 to-blue-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                 
                                 {/* Step Number */}
-                                <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:shadow-orange-500/50 group-hover:scale-110 transition-all duration-500">
+                                <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:shadow-blue-500/50 group-hover:scale-110 transition-all duration-500">
                                     {step.number}
                                 </div>
                                 
                                 {/* Icon */}
-                                <div className="text-orange-500 mb-6 mt-4 group-hover:text-orange-400 group-hover:scale-110 transition-all duration-500">
+                                <div className="text-blue-500 mb-6 mt-4 group-hover:text-blue-400 group-hover:scale-110 transition-all duration-500">
                                     {step.icon}
                                 </div>
                                 
                                 {/* Content */}
-                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-orange-100 transition-colors duration-500">
+                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-100 transition-colors duration-500">
                                     {step.title}
                                 </h3>
                                 <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-500">
@@ -106,7 +106,7 @@ export default function HowItWorks() {
 
                 {/* CTA */}
                 <div className="text-center mt-16">
-                    <a href="#cta" className="bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 text-white font-bold text-lg px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 inline-flex items-center gap-2 shadow-lg shadow-orange-500/25">
+                    <a href="#cta" className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold text-lg px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 inline-flex items-center gap-2 shadow-lg shadow-blue-500/25">
                         Get Started Now
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
