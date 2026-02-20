@@ -33,7 +33,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 items-start mb-8">
             <a
-              href="https://apps.shopify.com"
+              href="https://apps.shopify.com/chatflow?st_source=autocomplete&surface_detail=autocomplete_apps"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-[#1f93ff] hover:bg-[#0d7ae6] text-white font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-200 flex items-center gap-2 shadow-md hover:shadow-lg"

@@ -35,7 +35,7 @@ export default function CTA() {
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                     <a 
-                        href="https://apps.shopify.com" 
+                        href="https://apps.shopify.com/chatflow?st_source=autocomplete&surface_detail=autocomplete_apps" 
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group bg-white hover:bg-gray-50 text-[#1f93ff] font-semibold text-lg px-10 py-5 rounded-lg transition-all duration-200 flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl transform hover:scale-105"
