@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="w-full">
           {/* Intro badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 bg-white/70 border border-blue-100 rounded-full text-sm text-[#1f93ff]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 bg-white/70 border border-blue-100 rounded-full text-sm text-[#6892FA]">
             <span className="text-lg">⚡</span>
             <span className="font-medium">
               Introducing ChatFlow, your Shopify live chat companion
@@ -36,7 +36,7 @@ export default function Hero() {
               href="https://apps.shopify.com/chatflow?st_source=autocomplete&surface_detail=autocomplete_apps"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-[#1f93ff] hover:bg-[#0d7ae6] text-white font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-200 flex items-center gap-2 shadow-md hover:shadow-lg"
+              className="group bg-[#6892FA] hover:bg-[#5578E8] text-white font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-200 flex items-center gap-2 shadow-md hover:shadow-lg"
             >
               <span>Start your free trial</span>
               <svg
@@ -78,14 +78,14 @@ export default function Hero() {
                 >
                   <path
                     d="M12 8V12L14.5 14.5"
-                    stroke="#1f93ff"
+                    stroke="#6892FA"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   />
                   <path
                     d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                    stroke="#1f93ff"
+                    stroke="#6892FA"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -111,7 +111,7 @@ export default function Hero() {
                 >
                   <path
                     d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
-                    fill="#1f93ff"
+                    fill="#6892FA"
                   />
                 </svg>
               </span>

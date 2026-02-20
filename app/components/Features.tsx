@@ -64,12 +64,12 @@ export default function Features() {
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#1f93ff]/10 border border-[#1f93ff]/20 rounded-full text-sm font-medium text-[#1f93ff] mb-6">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#6892FA]/10 border border-[#6892FA]/20 rounded-full text-sm font-medium text-[#6892FA] mb-6">
                         Features
                     </div>
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                         Everything You Need for
-                        <span className="block text-[#1f93ff] mt-2">Customer Support</span>
+                        <span className="block text-[#6892FA] mt-2">Customer Support</span>
                     </h2>
                     <p className="text-lg text-gray-600 leading-relaxed">
                         Powerful features built specifically for Shopify merchants who want to deliver exceptional customer experiences. From automated setup to advanced analytics, ChatFlow provides all the tools you need to scale your support operations efficiently and effectively.
@@ -81,10 +81,10 @@ export default function Features() {
                     {features.map((feature, index) => (
                         <div 
                             key={index}
-                            className="group p-10 rounded-xl border border-gray-200 bg-white hover:border-[#1f93ff]/30 hover:shadow-xl transition-all duration-200"
+                            className="group p-10 rounded-xl border border-gray-200 bg-white hover:border-[#6892FA]/30 hover:shadow-xl transition-all duration-200"
                         >
                             {/* Icon Container */}
-                            <div className="w-14 h-14 rounded-lg bg-[#1f93ff]/10 flex items-center justify-center text-[#1f93ff] mb-8 group-hover:bg-[#1f93ff] group-hover:text-white transition-all duration-200">
+                            <div className="w-14 h-14 rounded-lg bg-[#6892FA]/10 flex items-center justify-center text-[#6892FA] mb-8 group-hover:bg-[#6892FA] group-hover:text-white transition-all duration-200">
                                 {feature.icon}
                             </div>
                             

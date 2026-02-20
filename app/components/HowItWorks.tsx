@@ -119,12 +119,12 @@ export default function HowItWorks() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#1f93ff]/10 border border-[#1f93ff]/20 rounded-full text-sm font-medium text-[#1f93ff] mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#6892FA]/10 border border-[#6892FA]/20 rounded-full text-sm font-medium text-[#6892FA] mb-6">
             How it works
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Get started in{" "}
-            <span className="block text-[#1f93ff] mt-1">4 simple steps</span>
+            <span className="block text-[#6892FA] mt-1">4 simple steps</span>
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
             From installation to your first live conversation in under five minutes—no code, no complex setup, just plug-and-play. ChatFlow handles everything automatically so you can focus on what matters: helping your customers. Our streamlined process ensures you're up and running faster than any other live chat solution on Shopify.
@@ -136,13 +136,13 @@ export default function HowItWorks() {
           {steps.map((step) => (
             <div
               key={step.number}
-              className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:border-[#1f93ff]/40 transition-all duration-200 p-8"
+              className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-xl hover:border-[#6892FA]/40 transition-all duration-200 p-8"
             >
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-[#1f93ff]/10 flex items-center justify-center text-[#1f93ff] flex-shrink-0">
+                <div className="w-12 h-12 rounded-xl bg-[#6892FA]/10 flex items-center justify-center text-[#6892FA] flex-shrink-0">
                   {step.icon}
                 </div>
-                <span className="text-xs font-semibold text-[#1f93ff] uppercase tracking-wide">
+                <span className="text-xs font-semibold text-[#6892FA] uppercase tracking-wide">
                   Step {step.number}
                 </span>
               </div>
@@ -161,7 +161,7 @@ export default function HowItWorks() {
         <div className="mt-12">
           <a
             href="#cta"
-            className="inline-flex items-center gap-2 bg-[#1f93ff] hover:bg-[#0d7ae6] text-white font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-200 shadow-lg shadow-[#1f93ff]/25 hover:shadow-xl hover:shadow-[#1f93ff]/30"
+            className="inline-flex items-center gap-2 bg-[#6892FA] hover:bg-[#5578E8] text-white font-semibold px-10 py-4 rounded-lg text-lg transition-all duration-200 shadow-lg shadow-[#6892FA]/25 hover:shadow-xl hover:shadow-[#6892FA]/30"
           >
             Get started now
             <svg

@@ -28,7 +28,7 @@ export default function Testimonials() {
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#1f93ff]/10 border border-[#1f93ff]/20 rounded-full text-sm font-medium text-[#1f93ff] mb-6">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#6892FA]/10 border border-[#6892FA]/20 rounded-full text-sm font-medium text-[#6892FA] mb-6">
                         Testimonials
                     </div>
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -48,7 +48,7 @@ export default function Testimonials() {
                         >
                             {/* Quote */}
                             <div className="mb-8">
-                                <svg className="w-10 h-10 text-[#1f93ff]/20 mb-6" fill="currentColor" viewBox="0 0 24 24">
+                                <svg className="w-10 h-10 text-[#6892FA]/20 mb-6" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                                 </svg>
                                 <p className="text-gray-700 leading-relaxed text-base">
@@ -58,13 +58,13 @@ export default function Testimonials() {
 
                             {/* Author */}
                             <div className="flex items-center gap-4">
-                                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#1f93ff] to-[#0d7ae6] flex items-center justify-center text-white font-semibold">
+                                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#6892FA] to-[#5578E8] flex items-center justify-center text-white font-semibold">
                                     {testimonial.avatar}
                                 </div>
                                 <div>
                                     <div className="font-semibold text-gray-900">{testimonial.author}</div>
                                     <div className="text-sm text-gray-600">{testimonial.role}</div>
-                                    <div className="text-sm text-[#1f93ff] font-medium">{testimonial.company}</div>
+                                    <div className="text-sm text-[#6892FA] font-medium">{testimonial.company}</div>
                                 </div>
                             </div>
                         </div>

@@ -12,13 +12,13 @@ export default function Integration() {
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left Content */}
                     <div className="space-y-8">
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#1f93ff]/10 border border-[#1f93ff]/20 rounded-full text-sm font-medium text-[#1f93ff]">
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#6892FA]/10 border border-[#6892FA]/20 rounded-full text-sm font-medium text-[#6892FA]">
                             Powered by Chatwoot
                         </div>
                         
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
                             Enterprise-Grade
-                            <span className="block text-[#1f93ff] mt-2">Live Chat Platform</span>
+                            <span className="block text-[#6892FA] mt-2">Live Chat Platform</span>
                         </h2>
                         
                         <p className="text-lg text-gray-600 leading-relaxed">
@@ -45,9 +45,9 @@ export default function Integration() {
                                 }
                             ].map((item, index) => (
                                 <div key={index} className="flex gap-4">
-                                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#1f93ff]/10 flex items-center justify-center mt-0.5">
+                                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-[#6892FA]/10 flex items-center justify-center mt-0.5">
                                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20 6L9 17L4 12" stroke="#1f93ff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M20 6L9 17L4 12" stroke="#6892FA" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                     </div>
                                     <div>
@@ -61,13 +61,13 @@ export default function Integration() {
                         <div className="flex items-center gap-4 pt-4">
                             <a 
                                 href="#cta" 
-                                className="bg-[#1f93ff] hover:bg-[#0d7ae6] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-200 shadow-lg shadow-[#1f93ff]/25 hover:shadow-xl"
+                                className="bg-[#6892FA] hover:bg-[#5578E8] text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-200 shadow-lg shadow-[#6892FA]/25 hover:shadow-xl"
                             >
                                 Start Free Trial
                             </a>
                             <a 
                                 href="#features" 
-                                className="text-[#1f93ff] font-medium hover:text-[#0d7ae6] flex items-center gap-2 transition-colors"
+                                className="text-[#6892FA] font-medium hover:text-[#5578E8] flex items-center gap-2 transition-colors"
                             >
                                 View All Features
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +82,7 @@ export default function Integration() {
                         {/* Chat Interface Mockup */}
                         <div className="bg-white rounded-xl shadow-xl overflow-hidden border border-gray-200">
                             {/* Header */}
-                            <div className="bg-gradient-to-r from-[#1f93ff] to-[#0d7ae6] px-6 py-4 flex items-center justify-between">
+                            <div className="bg-gradient-to-r from-[#6892FA] to-[#5578E8] px-6 py-4 flex items-center justify-between">
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,7 +104,7 @@ export default function Integration() {
                             <div className="p-6 space-y-4 h-80 overflow-hidden bg-gray-50">
                                 {/* Customer Message */}
                                 <div className="flex gap-3">
-                                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#1f93ff] to-[#0d7ae6] flex-shrink-0"></div>
+                                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#6892FA] to-[#5578E8] flex-shrink-0"></div>
                                     <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 max-w-xs shadow-sm border border-gray-100">
                                         <p className="text-gray-900 text-sm">Hi! I need help with my recent order. When will it arrive?</p>
                                         <span className="text-gray-400 text-xs mt-1 block">2:34 PM</span>
@@ -113,7 +113,7 @@ export default function Integration() {
 
                                 {/* Agent Message */}
                                 <div className="flex gap-3 justify-end">
-                                    <div className="bg-[#1f93ff] rounded-2xl rounded-tr-sm px-4 py-3 max-w-xs">
+                                    <div className="bg-[#6892FA] rounded-2xl rounded-tr-sm px-4 py-3 max-w-xs">
                                         <p className="text-white text-sm">Hello! I'd be happy to help you track your order. Can you please provide your order number?</p>
                                         <span className="text-blue-100 text-xs mt-1 block">2:35 PM</span>
                                     </div>
@@ -122,7 +122,7 @@ export default function Integration() {
 
                                 {/* Customer Message */}
                                 <div className="flex gap-3">
-                                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#1f93ff] to-[#0d7ae6] flex-shrink-0"></div>
+                                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#6892FA] to-[#5578E8] flex-shrink-0"></div>
                                     <div className="bg-white rounded-2xl rounded-tl-sm px-4 py-3 max-w-xs shadow-sm border border-gray-100">
                                         <p className="text-gray-900 text-sm">Sure! It's #SO-2024-001234</p>
                                         <span className="text-gray-400 text-xs mt-1 block">2:36 PM</span>
@@ -148,10 +148,10 @@ export default function Integration() {
                                     <input 
                                         type="text" 
                                         placeholder="Type your message..."
-                                        className="flex-1 bg-gray-50 border border-gray-200 rounded-lg px-4 py-2 text-gray-900 placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-[#1f93ff]/20 focus:border-[#1f93ff]"
+                                        className="flex-1 bg-gray-50 border border-gray-200 rounded-lg px-4 py-2 text-gray-900 placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-[#6892FA]/20 focus:border-[#6892FA]"
                                         disabled
                                     />
-                                    <button className="bg-[#1f93ff] p-2 rounded-lg hover:bg-[#0d7ae6] transition-colors">
+                                    <button className="bg-[#6892FA] p-2 rounded-lg hover:bg-[#5578E8] transition-colors">
                                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
@@ -161,7 +161,7 @@ export default function Integration() {
                         </div>
 
                         {/* Floating Widget Preview */}
-                        <div className="absolute -bottom-4 -right-4 bg-[#1f93ff] rounded-full p-4 shadow-xl">
+                        <div className="absolute -bottom-4 -right-4 bg-[#6892FA] rounded-full p-4 shadow-xl">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.8214 2.48697 15.5291 3.33782 17L2.5 21.5L7 20.6622C8.47087 21.513 10.1786 22 12 22Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M8 10.5H16M8 14H13" stroke="white" strokeWidth="2" strokeLinecap="round" />

@@ -53,7 +53,7 @@ export default function Header() {
                 href="https://apps.shopify.com/chatflow?st_source=autocomplete&surface_detail=autocomplete_apps"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#1f93ff] hover:bg-[#0d7ae6] text-white font-semibold px-6 py-2.5 rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md"
+                className="bg-[#6892FA] hover:bg-[#5578E8] text-white font-semibold px-6 py-2.5 rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md"
               >
                 Download Now
               </a>
@@ -133,7 +133,7 @@ export default function Header() {
                 href="https://apps.shopify.com/chatflow?st_source=autocomplete&surface_detail=autocomplete_apps"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#1f93ff] hover:bg-[#0d7ae6] text-white font-semibold px-6 py-2.5 rounded-lg text-center transition-colors mt-2"
+                className="bg-[#6892FA] hover:bg-[#5578E8] text-white font-semibold px-6 py-2.5 rounded-lg text-center transition-colors mt-2"
               >
                 Download Now
               </a>

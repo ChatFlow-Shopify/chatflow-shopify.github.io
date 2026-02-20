@@ -1,11 +1,11 @@
 export default function CTA() {
     return (
-        <section id="cta" className="py-20 bg-gradient-to-br from-[#1f93ff] to-[#0d7ae6] relative overflow-hidden">
+        <section id="cta" className="py-20 bg-gradient-to-br from-[#6892FA] to-[#5578E8] relative overflow-hidden">
             {/* Grid Background with white lines and fade */}
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:80px_80px]" />
-                <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#1f93ff] to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#0d7ae6] to-transparent" />
+                <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#6892FA] to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#5578E8] to-transparent" />
             </div>
 
             {/* Background Pattern */}
@@ -38,7 +38,7 @@ export default function CTA() {
                         href="https://apps.shopify.com/chatflow?st_source=autocomplete&surface_detail=autocomplete_apps" 
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group bg-white hover:bg-gray-50 text-[#1f93ff] font-semibold text-lg px-10 py-5 rounded-lg transition-all duration-200 flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl transform hover:scale-105"
+                        className="group bg-white hover:bg-gray-50 text-[#6892FA] font-semibold text-lg px-10 py-5 rounded-lg transition-all duration-200 flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl transform hover:scale-105"
                     >
                         <svg width="24" height="26" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.338 4.346C17.3023 4.11163 17.1005 3.9386 16.8618 3.92603L14.3558 3.80603C14.3558 3.80603 12.6948 2.14503 12.5268 1.97803C12.3578 1.81003 12.0278 1.85303 11.9218 1.88303C11.9038 1.88803 11.5928 1.98303 11.0718 2.14203C10.4328 0.938032 9.40581 0.0550325 8.05281 0.0550325C8.01081 0.0550325 7.96681 0.0580325 7.92281 0.0600325C7.51981-0.444967 7.01881-0.644967 6.58581-0.644967C3.14081-0.644967 1.50181 3.65503 0.937807 5.54003C-0.417193 9.98003 -0.0741934 11.645 0.180807 12.52C0.828807 14.84 4.27581 20.14 8.11281 20.14C8.14581 20.14 8.17981 20.139 8.21181 20.136C8.51381 20.668 8.90581 21.055 9.41281 21.055C10.7428 21.055 11.4598 19.628 11.9808 18.358L15.0238 11.24C15.0238 11.24 17.3528 4.79003 17.338 4.346Z" fill="currentColor" />

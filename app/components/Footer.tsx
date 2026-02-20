@@ -103,7 +103,7 @@ export default function Footer() {
                         © {new Date().getFullYear()} ChatFlow. All rights reserved.
                     </p>
                     <div className="flex items-center gap-2 text-sm text-gray-400">
-                        <span className="w-2 h-2 rounded-full bg-[#1f93ff] animate-pulse"></span>
+                        <span className="w-2 h-2 rounded-full bg-[#6892FA] animate-pulse"></span>
                         All systems operational
                     </div>
                 </div>

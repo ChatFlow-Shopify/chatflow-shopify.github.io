@@ -67,12 +67,12 @@ export default function Pricing() {
                 </div>
                 
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/70 border border-blue-100 rounded-full text-sm text-[#1f93ff] mb-6">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/70 border border-blue-100 rounded-full text-sm text-[#6892FA] mb-6">
                         <span className="font-medium">Pricing Plans</span>
                     </div>
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                         Choose Your
-                        <span className="block text-[#1f93ff] mt-2">Perfect Plan</span>
+                        <span className="block text-[#6892FA] mt-2">Perfect Plan</span>
                     </h1>
                     <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
                         Start free and scale as you grow. All plans include unlimited conversations and core features.
@@ -91,11 +91,11 @@ export default function Pricing() {
                         {plans.map((plan, index) => (
                             <div key={index} className={`relative bg-white rounded-2xl border p-8 transition-all duration-200 hover:shadow-xl ${
                                 plan.popular 
-                                    ? 'border-[#1f93ff] shadow-lg' 
-                                    : 'border-gray-200 hover:border-[#1f93ff]/30'
+                                    ? 'border-[#6892FA] shadow-lg' 
+                                    : 'border-gray-200 hover:border-[#6892FA]/30'
                             }`}>
                                 {plan.popular && (
-                                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#1f93ff] text-white px-4 py-1 rounded-full text-sm font-semibold">
+                                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#6892FA] text-white px-4 py-1 rounded-full text-sm font-semibold">
                                         Most Popular
                                     </div>
                                 )}
@@ -103,7 +103,7 @@ export default function Pricing() {
                                 <div className="text-center mb-8">
                                     <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
                                     <div className="flex items-baseline justify-center gap-1 mb-2">
-                                        <span className="text-4xl font-extrabold text-[#1f93ff]">{plan.price}</span>
+                                        <span className="text-4xl font-extrabold text-[#6892FA]">{plan.price}</span>
                                         {plan.period && <span className="text-gray-600">{plan.period}</span>}
                                     </div>
                                     <p className="text-gray-600">{plan.description}</p>
@@ -112,7 +112,7 @@ export default function Pricing() {
                                 <ul className="space-y-4 mb-8">
                                     {plan.features.map((feature, idx) => (
                                         <li key={idx} className="flex items-center gap-3">
-                                            <svg className="w-5 h-5 text-[#1f93ff] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <svg className="w-5 h-5 text-[#6892FA] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
                                             <span className="text-gray-600">{feature}</span>
@@ -122,8 +122,8 @@ export default function Pricing() {
 
                                 <button className={`w-full py-4 px-8 rounded-xl text-lg font-semibold transition-all duration-200 ${
                                     plan.popular
-                                        ? 'bg-[#1f93ff] hover:bg-[#0d7ae6] text-white shadow-md hover:shadow-lg'
-                                        : 'bg-white border border-gray-200 text-gray-900 hover:bg-gray-50 hover:border-[#1f93ff]/30'
+                                        ? 'bg-[#6892FA] hover:bg-[#5578E8] text-white shadow-md hover:shadow-lg'
+                                        : 'bg-white border border-gray-200 text-gray-900 hover:bg-gray-50 hover:border-[#6892FA]/30'
                                 }`}>
                                     {plan.cta}
                                 </button>

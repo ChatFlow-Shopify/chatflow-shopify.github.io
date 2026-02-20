@@ -16,12 +16,12 @@ export default function Contact() {
                 </div>
                 
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/70 border border-blue-100 rounded-full text-sm text-[#1f93ff] mb-6">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/70 border border-blue-100 rounded-full text-sm text-[#6892FA] mb-6">
                         <span className="font-medium">Get in Touch</span>
                     </div>
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                         Contact Our
-                        <span className="block text-[#1f93ff] mt-2">Support Team</span>
+                        <span className="block text-[#6892FA] mt-2">Support Team</span>
                     </h1>
                     <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
                         Have questions about ChatFlow? Our team is here to help you get started and succeed.
@@ -41,41 +41,41 @@ export default function Contact() {
                             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Get Support</h2>
                             <div className="space-y-6">
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 bg-[#1f93ff]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-6 h-6 text-[#1f93ff]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <div className="w-12 h-12 bg-[#6892FA]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                        <svg className="w-6 h-6 text-[#6892FA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                         </svg>
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold text-gray-900 mb-2">Email Support</h3>
                                         <p className="text-gray-600 mb-2">Get help with setup, configuration, or any questions</p>
-                                        <a href="mailto:support@chatflow.app" className="text-[#1f93ff] hover:text-[#0d7ae6] transition-colors">support@chatflow.app</a>
+                                        <a href="mailto:support@chatflow.app" className="text-[#6892FA] hover:text-[#5578E8] transition-colors">support@chatflow.app</a>
                                     </div>
                                 </div>
 
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 bg-[#1f93ff]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-6 h-6 text-[#1f93ff]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <div className="w-12 h-12 bg-[#6892FA]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                        <svg className="w-6 h-6 text-[#6892FA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                                         </svg>
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold text-gray-900 mb-2">Live Chat</h3>
                                         <p className="text-gray-600 mb-2">Chat with our team in real-time</p>
-                                        <span className="text-[#1f93ff]">Available 24/7</span>
+                                        <span className="text-[#6892FA]">Available 24/7</span>
                                     </div>
                                 </div>
 
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 bg-[#1f93ff]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                        <svg className="w-6 h-6 text-[#1f93ff]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <div className="w-12 h-12 bg-[#6892FA]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                        <svg className="w-6 h-6 text-[#6892FA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                                         </svg>
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold text-gray-900 mb-2">Documentation</h3>
                                         <p className="text-gray-600 mb-2">Comprehensive guides and tutorials</p>
-                                        <a href="#" className="text-[#1f93ff] hover:text-[#0d7ae6] transition-colors">View Docs</a>
+                                        <a href="#" className="text-[#6892FA] hover:text-[#5578E8] transition-colors">View Docs</a>
                                     </div>
                                 </div>
                             </div>
@@ -86,17 +86,17 @@ export default function Contact() {
                             <form className="space-y-6">
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                                    <input type="text" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 placeholder-gray-400 focus:border-[#1f93ff] focus:ring-2 focus:ring-[#1f93ff]/20 focus:outline-none transition-colors" placeholder="Your name" />
+                                    <input type="text" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 placeholder-gray-400 focus:border-[#6892FA] focus:ring-2 focus:ring-[#6892FA]/20 focus:outline-none transition-colors" placeholder="Your name" />
                                 </div>
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                                    <input type="email" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 placeholder-gray-400 focus:border-[#1f93ff] focus:ring-2 focus:ring-[#1f93ff]/20 focus:outline-none transition-colors" placeholder="your@email.com" />
+                                    <input type="email" className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 placeholder-gray-400 focus:border-[#6892FA] focus:ring-2 focus:ring-[#6892FA]/20 focus:outline-none transition-colors" placeholder="your@email.com" />
                                 </div>
                                 <div>
                                     <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                                    <textarea rows={4} className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 placeholder-gray-400 focus:border-[#1f93ff] focus:ring-2 focus:ring-[#1f93ff]/20 focus:outline-none transition-colors resize-none" placeholder="How can we help you?"></textarea>
+                                    <textarea rows={4} className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 placeholder-gray-400 focus:border-[#6892FA] focus:ring-2 focus:ring-[#6892FA]/20 focus:outline-none transition-colors resize-none" placeholder="How can we help you?"></textarea>
                                 </div>
-                                <button type="submit" className="w-full bg-[#1f93ff] hover:bg-[#0d7ae6] text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-200 shadow-md hover:shadow-lg">
+                                <button type="submit" className="w-full bg-[#6892FA] hover:bg-[#5578E8] text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-200 shadow-md hover:shadow-lg">
                                     Send Message
                                 </button>
                             </form>
