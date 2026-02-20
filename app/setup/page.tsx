@@ -128,6 +128,11 @@ export default function Setup() {
             <section className="relative bg-white overflow-hidden pt-32 pb-20">
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-white" />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_0%_0%,rgba(31,147,255,0.08),transparent_55%),radial-gradient(circle_at_100%_0%,rgba(31,147,255,0.06),transparent_55%)]" />
+                {/* Grid Background with fade */}
+                <div className="pointer-events-none absolute inset-0">
+                    <div className="absolute inset-0 bg-[linear-gradient(to_right,#e5e7eb_1px,transparent_1px),linear-gradient(to_bottom,#e5e7eb_1px,transparent_1px)] bg-[size:80px_80px]" />
+                    <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent" />
+                </div>
                 
                 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/70 border border-blue-100 rounded-full text-sm text-[#1f93ff] mb-6">

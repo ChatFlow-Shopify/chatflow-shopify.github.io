@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import LogoSlider from "./components/LogoSlider";
 import HowItWorks from "./components/HowItWorks";
 import Features from "./components/Features";
 import Integration from "./components/Integration";
@@ -14,6 +15,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <LogoSlider />
         <HowItWorks />
         <Features />
         <Integration />
