@@ -54,70 +54,66 @@ export default function Pricing() {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black">
+        <div className="min-h-screen bg-white">
             <Header />
             
-            <section className="pt-32 pb-20 relative overflow-hidden">
-                <div className="absolute inset-0">
-                    <div className="absolute top-20 left-10 w-96 h-96 bg-[#1073E9]/10 rounded-full blur-3xl animate-pulse" />
-                    <div className="absolute bottom-20 right-10 w-80 h-80 bg-[#1073E9]/5 rounded-full blur-3xl animate-pulse" />
-                </div>
+            <section className="relative bg-white overflow-hidden pt-32 pb-20">
+                <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-white" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_0%_0%,rgba(31,147,255,0.08),transparent_55%),radial-gradient(circle_at_100%_0%,rgba(31,147,255,0.06),transparent_55%)]" />
                 
-                <div className="relative max-w-4xl mx-auto px-6 text-center">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#1073E9]/10 border border-[#1073E9]/30 rounded-full text-sm font-medium text-[#1073E9] mb-6">
-                        Pricing Plans
+                <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/70 border border-blue-100 rounded-full text-sm text-[#1f93ff] mb-6">
+                        <span className="font-medium">Pricing Plans</span>
                     </div>
-                    <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                         Choose Your
-                        <span className="block bg-gradient-to-r from-[#1073E9] to-[#1073E9] bg-clip-text text-transparent">
-                            Perfect Plan
-                        </span>
+                        <span className="block text-[#1f93ff] mt-2">Perfect Plan</span>
                     </h1>
-                    <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+                    <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
                         Start free and scale as you grow. All plans include unlimited conversations and core features.
                     </p>
                 </div>
             </section>
 
-            <section className="pb-20">
-                <div className="max-w-7xl mx-auto px-6">
+            <section className="py-20 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-3 gap-8">
                         {plans.map((plan, index) => (
-                            <div key={index} className={`relative bg-black/40 backdrop-blur-md rounded-2xl border p-8 transition-all duration-300 hover:scale-105 ${
+                            <div key={index} className={`relative bg-white rounded-2xl border p-8 transition-all duration-200 hover:shadow-xl ${
                                 plan.popular 
-                                    ? 'border-[#1073E9]/40 hover:border-[#1073E9]/60 shadow-2xl shadow-[#1073E9]/20' 
-                                    : 'border-[#1073E9]/20 hover:border-[#1073E9]/40'
+                                    ? 'border-[#1f93ff] shadow-lg' 
+                                    : 'border-gray-200 hover:border-[#1f93ff]/30'
                             }`}>
                                 {plan.popular && (
-                                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-[#1073E9] to-[#1073E9] text-white px-4 py-1 rounded-full text-sm font-semibold">
+                                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#1f93ff] text-white px-4 py-1 rounded-full text-sm font-semibold">
                                         Most Popular
                                     </div>
                                 )}
                                 
                                 <div className="text-center mb-8">
-                                    <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
+                                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
                                     <div className="flex items-baseline justify-center gap-1 mb-2">
-                                        <span className="text-4xl font-extrabold text-[#1073E9]">{plan.price}</span>
-                                        {plan.period && <span className="text-gray-400">{plan.period}</span>}
+                                        <span className="text-4xl font-extrabold text-[#1f93ff]">{plan.price}</span>
+                                        {plan.period && <span className="text-gray-600">{plan.period}</span>}
                                     </div>
-                                    <p className="text-gray-300">{plan.description}</p>
+                                    <p className="text-gray-600">{plan.description}</p>
                                 </div>
 
                                 <ul className="space-y-4 mb-8">
                                     {plan.features.map((feature, idx) => (
                                         <li key={idx} className="flex items-center gap-3">
-                                            <svg className="w-5 h-5 text-[#1073E9] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <svg className="w-5 h-5 text-[#1f93ff] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>
-                                            <span className="text-gray-300">{feature}</span>
+                                            <span className="text-gray-600">{feature}</span>
                                         </li>
                                     ))}
                                 </ul>
 
-                                <button className={`w-full py-3 px-6 rounded-xl font-semibold transition-all duration-300 ${
+                                <button className={`w-full py-4 px-8 rounded-xl text-lg font-semibold transition-all duration-200 ${
                                     plan.popular
-                                        ? 'bg-gradient-to-r from-[#1073E9] to-[#1073E9] hover:from-[#1073E9] hover:to-[#1073E9] text-white shadow-lg shadow-[#1073E9]/25'
-                                        : 'bg-black/60 border border-[#1073E9]/30 text-white hover:bg-[#1073E9]/10 hover:border-[#1073E9]/50'
+                                        ? 'bg-[#1f93ff] hover:bg-[#0d7ae6] text-white shadow-md hover:shadow-lg'
+                                        : 'bg-white border border-gray-200 text-gray-900 hover:bg-gray-50 hover:border-[#1f93ff]/30'
                                 }`}>
                                     {plan.cta}
                                 </button>

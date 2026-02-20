@@ -60,28 +60,19 @@ export default function Features() {
     ];
 
     return (
-        <section id="features" className="py-20 bg-gradient-to-b from-black via-gray-900 to-black relative overflow-hidden">
-            {/* Background Elements */}
-            <div className="absolute inset-0">
-                <div className="absolute top-40 left-10 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl animate-pulse" />
-                <div className="absolute bottom-40 right-10 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
-                <div className="absolute top-20 right-1/3 w-64 h-64 bg-blue-400/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '4s' }} />
-            </div>
-            
-            <div className="relative max-w-7xl mx-auto px-6">
+        <section id="features" className="py-20 bg-white relative overflow-hidden">
+            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
-                <div className="text-center max-w-3xl mx-auto mb-16">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-full text-sm font-medium text-blue-400 mb-6">
+                <div className="mb-16">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#1f93ff]/10 border border-[#1f93ff]/20 rounded-full text-sm font-medium text-[#1f93ff] mb-6">
                         Features
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                         Everything You Need for
-                        <span className="block bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
-                            Customer Support
-                        </span>
+                        <span className="block text-[#1f93ff] mt-2">Customer Support</span>
                     </h2>
-                    <p className="text-xl text-gray-300">
-                        Powerful features built specifically for Shopify merchants
+                    <p className="text-lg text-gray-600 leading-relaxed">
+                        Powerful features built specifically for Shopify merchants who want to deliver exceptional customer experiences. From automated setup to advanced analytics, ChatFlow provides all the tools you need to scale your support operations efficiently and effectively.
                     </p>
                 </div>
 
@@ -90,32 +81,20 @@ export default function Features() {
                     {features.map((feature, index) => (
                         <div 
                             key={index}
-                            className="group relative p-8 rounded-2xl border border-blue-500/20 bg-black/40 backdrop-blur-md hover:bg-blue-500/10 hover:border-blue-500/40 hover:shadow-2xl hover:shadow-blue-500/20 hover:scale-105 hover:-translate-y-2 transition-all duration-700 ease-out overflow-hidden"
+                            className="group p-10 rounded-xl border border-gray-200 bg-white hover:border-[#1f93ff]/30 hover:shadow-xl transition-all duration-200"
                         >
-                            {/* Animated Background Glow */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-blue-500/5 to-blue-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                            <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 via-transparent to-blue-600/20 rounded-2xl opacity-0 group-hover:opacity-100 blur-sm transition-opacity duration-700" />
-                            
                             {/* Icon Container */}
-                            <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white mb-6 group-hover:scale-125 group-hover:rotate-6 group-hover:shadow-lg group-hover:shadow-blue-500/50 transition-all duration-700">
-                                <div className="group-hover:scale-110 transition-transform duration-700">
-                                    {feature.icon}
-                                </div>
+                            <div className="w-14 h-14 rounded-lg bg-[#1f93ff]/10 flex items-center justify-center text-[#1f93ff] mb-8 group-hover:bg-[#1f93ff] group-hover:text-white transition-all duration-200">
+                                {feature.icon}
                             </div>
                             
                             {/* Content */}
-                            <div className="relative">
-                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-100 transition-colors duration-500">
-                                    {feature.title}
-                                </h3>
-                                <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-500">
-                                    {feature.description}
-                                </p>
-                            </div>
-                            
-                            {/* Floating Particles */}
-                            <div className="absolute top-4 right-4 w-2 h-2 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-opacity duration-500" />
-                            <div className="absolute bottom-6 left-6 w-1 h-1 bg-blue-500 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-opacity duration-700" style={{ animationDelay: '0.5s' }} />
+                            <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                                {feature.title}
+                            </h3>
+                            <p className="text-gray-600 leading-relaxed text-base">
+                                {feature.description}
+                            </p>
                         </div>
                     ))}
                 </div>
